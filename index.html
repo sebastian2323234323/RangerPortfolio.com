@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sebastian — Roblox UI/UX Designer portfolio." />
+  <title>Sebastian — Roblox UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="mobile-top">
+    <button class="icon-btn" id="openMenu" aria-label="Open menu">☰</button>
+    <a class="mobile-brand" href="#home">SEBASTIAN<span>.</span></a>
+    <button class="icon-btn" id="mobileContact" aria-label="Contact">↗</button>
+  </div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">S</div>
+      <div>
+        <div class="brand-name">SEBASTIAN</div>
+        <div class="brand-role">UI / UX DESIGNER</div>
+      </div>
+    </div>
+
+    <div class="availability"><span></span> AVAILABLE FOR WORK</div>
+
+    <nav class="nav">
+      <a class="nav-link active" href="#home" data-section="home"><span>01</span> Home</a>
+      <a class="nav-link" href="#work" data-section="work"><span>02</span> Work</a>
+      <a class="nav-link" href="#services" data-section="services"><span>03</span> Services</a>
+      <a class="nav-link" href="#process" data-section="process"><span>04</span> Process</a>
+      <a class="nav-link" href="#about" data-section="about"><span>05</span> About</a>
+      <a class="nav-link" href="#contact" data-section="contact"><span>06</span> Contact</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="mini-stat">
+        <span>FOCUS</span>
+        <strong>ROBLOX UI</strong>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social" data-toast="Add your Discord invite in script.js">DISCORD</a>
+        <a href="#" class="social" data-toast="Add your X/Twitter link in script.js">X / TWITTER</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> Sebastian</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section id="home" class="hero section">
+      <div class="eyebrow"><span class="pulse"></span> ROBLOX UI / UX DESIGNER</div>
+      <h1>Interfaces that make<br><em>games feel finished.</em></h1>
+      <p class="hero-copy">I design polished Roblox interfaces built around atmosphere, usability, and the identity of the game — from HUDs and inventory systems to quests, shops, menus, and complete UI systems.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">VIEW MY WORK <span>↓</span></a>
+        <a href="#contact" class="btn btn-ghost">START A PROJECT <span>↗</span></a>
+      </div>
+      <div class="hero-meta">
+        <div><span>BASED AROUND</span><strong>ROBLOX DEVELOPMENT</strong></div>
+        <div><span>DESIGN TOOL</span><strong>FIGMA</strong></div>
+        <div><span>IMPLEMENTATION</span><strong>ROBLOX STUDIO</strong></div>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">SELECTED WORK</div>
+          <h2>My work<span>.</span></h2>
+        </div>
+        <div class="work-count"><strong id="workCount">12</strong> PROJECTS</div>
+      </div>
+
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="hud">HUD</button>
+        <button class="filter" data-filter="inventory">INVENTORY</button>
+        <button class="filter" data-filter="quest">QUESTS</button>
+        <button class="filter" data-filter="menu">MENUS</button>
+        <button class="filter" data-filter="shop">SHOP</button>
+        <button class="filter" data-filter="fantasy">DARK FANTASY</button>
+        <button class="filter" data-filter="scp">SCP</button>
+      </div>
+
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="eyebrow">WHAT I DO</div>
+      <div class="section-head compact">
+        <h2>Services<span>.</span></h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-num">01</div>
+          <h3>UI / UX DESIGN</h3>
+          <p>Custom interfaces designed around your game's genre, atmosphere, and gameplay needs.</p>
+          <div class="service-tags"><span>FIGMA</span><span>WIREFRAMES</span><span>UI SYSTEMS</span></div>
+        </article>
+        <article class="service-card">
+          <div class="service-num">02</div>
+          <h3>GAME UI SYSTEMS</h3>
+          <p>HUDs, inventory, quests, shops, abilities, team selection, menus, and other connected screens.</p>
+          <div class="service-tags"><span>HUD</span><span>INVENTORY</span><span>QUESTS</span></div>
+        </article>
+        <article class="service-card">
+          <div class="service-num">03</div>
+          <h3>ROBLOX IMPLEMENTATION</h3>
+          <p>Turning the approved design into a functional Roblox interface with clean interactions and animation.</p>
+          <div class="service-tags"><span>STUDIO</span><span>LUA</span><span>TWEENS</span></div>
+        </article>
+        <article class="service-card">
+          <div class="service-num">04</div>
+          <h3>UI REDESIGN</h3>
+          <p>Take an existing interface and give it a cleaner hierarchy, stronger visual identity, and better usability.</p>
+          <div class="service-tags"><span>REDESIGN</span><span>POLISH</span><span>UX</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="eyebrow">HOW IT WORKS</div>
+      <div class="section-head compact">
+        <h2>Process<span>.</span></h2>
+      </div>
+      <div class="process-list">
+        <div class="process-item"><div class="process-num">01</div><div><h3>BRIEF</h3><p>You explain the game, UI needed, references, style, and requirements.</p></div></div>
+        <div class="process-item"><div class="process-num">02</div><div><h3>DIRECTION</h3><p>We agree on the visual direction, layout, scope, and deliverables.</p></div></div>
+        <div class="process-item"><div class="process-num">03</div><div><h3>DESIGN</h3><p>I build the interface in Figma with attention to hierarchy, spacing, and detail.</p></div></div>
+        <div class="process-item"><div class="process-num">04</div><div><h3>REVISION</h3><p>We refine the design until it matches the intended direction.</p></div></div>
+        <div class="process-item"><div class="process-num">05</div><div><h3>IMPLEMENTATION</h3><p>If included, the final UI is brought into Roblox Studio and made functional.</p></div></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-panel">
+        <div>
+          <div class="eyebrow">ABOUT</div>
+          <h2>Designing the part<br>players <em>actually see.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>I'm Sebastian, a Roblox UI/UX designer and developer focused on creating interfaces that feel like they belong inside the game rather than sitting on top of it.</p>
+          <p>My work ranges from clean competitive HUDs to darker, atmospheric interfaces for survival, SCP, and fantasy experiences.</p>
+          <div class="skill-list">
+            <div><span>01</span> Figma</div><div><span>02</span> Roblox Studio</div><div><span>03</span> UI Animation</div><div><span>04</span> Lua / Scripting</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <div class="eyebrow">CONTACT</div>
+        <h2>Have a game that<br>needs better <em>UI?</em></h2>
+        <p>Send the project details, what you need designed, and any references you already have. I'll take it from there.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="#" data-toast="Replace this with your Discord invite in script.js">CONTACT ON DISCORD <span>↗</span></a>
+          <a class="btn btn-ghost" href="mailto:your@email.com">EMAIL ME <span>↗</span></a>
+        </div>
+        <div class="contact-note">Replace the placeholder Discord and email links before publishing.</div>
+      </div>
+    </section>
+
+    <footer>
+      <span>SEBASTIAN / ROBLOX UI DESIGN</span>
+      <span>BUILT FOR THE WEB · <span id="footerYear"></span></span>
+    </footer>
+  </main>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content">
+        <div class="modal-category" id="modalCategory"></div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-details">
+          <div><span>ROLE</span><strong id="modalRole"></strong></div>
+          <div><span>TOOLS</span><strong id="modalTools"></strong></div>
+          <div><span>TYPE</span><strong id="modalType"></strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
